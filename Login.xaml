@@ -1,0 +1,19 @@
+﻿<Window x:Class="Wpf_Zadaca_3.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Wpf_Zadaca_3" mc:Ignorable="d" Title="Login" Height="360" Width="320" WindowStyle="None" Background="#FF04C582" WindowStartupLocation="CenterScreen" ShowActivated="False" ScrollViewer.VerticalScrollBarVisibility="Disabled" ResizeMode="NoResize">
+    <Border BorderBrush="Black" BorderThickness="1" Margin="10" CornerRadius="15" Background="#FF2E3137">
+        <StackPanel HorizontalAlignment="Center" Height="340" Margin="-1" VerticalAlignment="Center" Width="300">
+            <Label Content="Zatvori" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Right" FontSize="16" Foreground="White" Height="41" Width="69" RenderTransformOrigin="0.484,0.411" VerticalAlignment="Center" MouseLeftButtonUp="Label_MouseLeftButtonUp"/>
+            <Label Content="Prijava na sistem" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontSize="32"/>
+            <Separator Height="10" Margin="10,0" HorizontalContentAlignment="Stretch" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Korisničko ime" FontSize="22" Foreground="White" Margin="10,0,0,0"/>
+            <TextBox x:Name="txtUsername" Height="30" TextWrapping="Wrap" Text="" Background="#FF545D6A" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="10,0" Width="280" FontSize="14" Foreground="White" TextAlignment="Center"/>
+            <Label Content="Lozinka" FontSize="22" Foreground="White" Margin="10,0,0,0"/>
+            <PasswordBox x:Name="sifra" Background="#FF545D6A" HorizontalContentAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Margin="10,0" HorizontalAlignment="Center" Width="280" Foreground="White" FontSize="14"/>
+            <Button Content="Prijavi se" Margin="112,10,112,0" VerticalAlignment="Center" Height="30" FontSize="16" Foreground="White" Background="#FF545D6A" BorderThickness="1" Click="Button_Click"/>
+        </StackPanel>
+    </Border>
+</Window>
